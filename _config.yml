@@ -102,7 +102,9 @@ theme: Claudia
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: 'git'
+  repo: https://github.com/anonfaded/anonfaded.github.io.git # Replace with your repository URL
+  branch: gh-pages
 # Hexo-generator-category and Hexo-generator-tag plugins
 category_generator:
   per_page: 7
