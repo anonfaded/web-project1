@@ -1,0 +1,81 @@
+@import url("//at.alicdn.com/t/font_2266068_otkvzqnxk0g.css");
+
+@import "common/variable";
+@import "themes/theme";
+
+:root {
+
+  body {
+    margin: 0;
+    height: 100vh;
+    padding-top: 45px;
+
+    a {
+      color: inherit;
+
+      &:hover, &:hover .iconfont {
+        text-decoration: none;
+        color: #EC0B36;
+      }
+    }
+
+    .tag.post-item-tag {
+      margin-right: 5px;
+
+      font-weight: bold;
+      color: gray;
+      font-style: normal;
+
+      border-radius: 10px;
+      background: #000302;
+      border: 1px solid transparent;
+        transition: background-color 0.1s ease, border 0.1s ease; /* Add transition for smooth hover effect */
+    }
+    .tag.post-item-tag:hover { 
+ //   background-color: black;
+ 
+      border: 1px solid #EC0B36; /* Use a transparent border to maintain space */
+  cursor: pointer; /* Change the cursor to a pointer on hover */
+    }
+    .button.is-default {
+      height: 40px;
+
+      border: none;
+      border-radius: $borderRadius;
+      color: var(--second-text-color);
+      background: var(--third-bg-color);
+      
+    }
+/* Add styles for the button when hovered */
+.button.is-default:hover {
+  background-color: #EC0B36; /* Change the background color on hover */
+  color: white; /* Change the text color on hover */
+  cursor: pointer; /* Change the cursor to a pointer on hover */
+}
+
+
+    > main {
+      flex-grow: 2;
+      flex-basis: 0;
+    }
+
+    > footer {
+      margin: 0 30px;
+      padding: 20px 0;
+      border-top: 1px solid rgba(0, 0, 0, 0.05);
+
+      .sns-container .iconfont {
+        margin: 0 5px;
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+@import "widget-header";
+
+
+
+
+
+
